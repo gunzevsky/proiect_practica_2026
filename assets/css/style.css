@@ -181,10 +181,6 @@ section h2 {
   font-size: 18px;
 }
 
-/* MOBILE */
-
-
-
 /* GALLERY */
 
 .gallery-grid {
@@ -297,6 +293,279 @@ section h2 {
   color: #d61b1b;
   margin-bottom: 12px;
   font-size: 22px;
+}
+
+/* CONTACTS LAYOUT */
+
+.contacts-layout {
+  display: grid;
+
+  /* 2fr = форма занимает 2/3
+     1fr = контакты занимают 1/3 */
+
+  grid-template-columns: 2fr 1fr;
+
+  gap: 40px;
+}
+
+/* FORM */
+
+.contact-form {
+  background: #121212;
+
+  padding: 30px;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.35);
+}
+
+fieldset {
+  border: 1px solid rgba(255,255,255,0.1);
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  margin-bottom: 25px;
+}
+
+legend {
+  color: #d61b1b;
+
+  padding: 0 10px;
+
+  font-weight: bold;
+}
+
+.contact-form label {
+  display: block;
+
+  margin-bottom: 8px;
+  margin-top: 15px;
+
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #1d1d1d;
+  color: white;
+
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+
+  resize: vertical;
+}
+
+.contact-form select {
+  cursor: pointer;
+}
+
+.contact-form small {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #999;
+}
+
+/* CONTACT INFO */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+.contact-info iframe {
+  width: 100%;
+  height: 250px;
+
+  border: none;
+
+  border-radius: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .contacts-layout {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* FLOATING LABELS */
+
+.input-group {
+  position: relative;
+
+  margin-bottom: 28px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+
+  padding:
+    18px 12px 12px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #1d1d1d;
+
+  color: white;
+
+  font-size: 16px;
+}
+
+.input-group textarea {
+  min-height: 140px;
+
+  resize: vertical;
+}
+
+.input-group label {
+  position: absolute;
+
+  left: 12px;
+  top: 16px;
+
+  color: #999;
+
+  pointer-events: none;
+
+  transition: 0.3s ease;
+}
+
+/* FLOAT EFFECT */
+
+.input-group input:focus,
+.input-group textarea:focus,
+.contact-form select:focus {
+
+  outline: none;
+
+  box-shadow:
+    0 0 0 2px rgba(214,27,27,0.4);
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+
+  top: 6px;
+
+  font-size: 12px;
+
+  color: #d61b1b;
+}
+
+/* ERROR TOOLTIP */
+
+.error-msg {
+  display: block;
+
+  opacity: 0;
+
+  color: #ff4d4d;
+
+  font-size: 12px;
+
+  margin-top: 6px;
+
+  transition: 0.3s;
+}
+
+/* SHOW ONLY WHEN INVALID + FOCUS */
+
+.input-group input:invalid:focus ~ .error-msg,
+.input-group textarea:invalid:focus ~ .error-msg {
+
+  opacity: 1;
+}
+
+/* SUBMIT BUTTON */
+
+.submit-btn {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #d61b1b;
+
+  color: white;
+
+  border: none;
+
+  padding: 14px 28px;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #ff2a2a;
+}
+
+/* ACTIVE */
+
+.submit-btn:active {
+  transform: scale(0.97);
+}
+
+/* LOADING EFFECT */
+
+.submit-btn::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -100%;
+
+  width: 100%;
+  height: 100%;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent,
+      rgba(255,255,255,0.35),
+      transparent
+    );
+
+  transition: 0.5s;
+}
+
+.submit-btn:hover::after {
+  left: 100%;
 }
 
 /* FOOTER */

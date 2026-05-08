@@ -122,28 +122,207 @@
 </section>
 
   <!-- CONTACTS -->
-  <section id="contacts">
-    <h2>Контакты</h2>
 
-      <div class="contacts-container">
+<section id="contacts">
 
-        <div class="contact-card">
-          <h3>Адрес</h3>
-          <p>ул. Спортсменов, 10, Кишинёв</p>
-        </div>
+  <h2>Контакты</h2>
 
-        <div class="contact-card">
-          <h3>Телефон</h3>
-          <p>+373 69413050</p>
-        </div>
+  <div class="contacts-layout">
 
-        <div class="contact-card">
-          <h3>Email</h3>
-          <p>info@gymgartha.md</p>
-        </div>
+    <!-- FORM -->
+
+    <form class="contact-form">
+
+      <!-- PERSONAL DATA -->
+
+      <fieldset>
+
+        <legend>Личные данные</legend>
+
+          <div class="input-group">
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+
+              required
+
+              placeholder=" "
+
+              autocomplete="name"
+            >
+
+            <label for="name">
+              Имя
+            </label>
+
+            <span class="error-msg">
+              Введите имя
+            </span>
+            
+          </div>
+
+          <div class="input-group">
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+
+            aria-label="Email"
+
+            required
+
+            placeholder=" "
+
+            autocomplete="email"
+          >
+
+            <label for="email">
+              Email
+            </label>
+
+            <span class="error-msg">
+              Неверный email
+            </span>
+
+          </div>
+
+          <div class="input-group">
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+
+              required
+
+              placeholder=" "
+
+              autocomplete="tel"
+
+              pattern="[0-9+\s]{8,15}"
+            >
+
+            <label for="phone">
+              Phone
+            </label>
+
+            <span class="error-msg">
+              Неверный номер
+            </span>
+
+          </div>
+
+      </fieldset>
+
+      <!-- MESSAGE DATA -->
+
+      <fieldset>
+
+        <legend>Сообщение</legend>
+
+        <label for="subject">Тип тренировки</label>
+
+        <select
+          id="subject"
+          name="subject"
+
+          required
+        >
+
+          <option value="">
+            Выберите программу
+          </option>
+
+          <option>
+            CrossFit
+          </option>
+
+          <option>
+            Fitness
+          </option>
+
+          <option>
+            Cardio
+          </option>
+
+          <option>
+            Personal Training
+          </option>
+
+        </select>
+        
+          <div class="input-group">
+
+            <textarea
+              id="message"
+              name="message"
+
+              maxlength="300"
+
+              placeholder=" "
+
+              autocomplete="off"
+
+              required
+            ></textarea>
+
+            <label for="message">
+              Сообщение
+            </label>
+
+            <span class="error-msg">
+              Введите сообщение
+            </span>
+
+          </div>
+
+        <small>
+          Максимум: 300 символов
+        </small>
+
+      </fieldset>
+
+      <button type="submit" class="submit-btn">
+        Отправить
+      </button>
+
+    </form>
+
+    <!-- CONTACT INFO -->
+
+    <div class="contact-info">
+
+      <div class="contact-card">
+        <h3>Адрес</h3>
+        <p>ул. Спортсменов, 10, Кишинёв</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Телефон</h3>
+        <p>+373 69413050</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p>info@gymgartha.md</p>
+      </div>
+
+      <!-- MAP -->
+
+      <iframe
+        src="https://maps.google.com/maps?q=Chisinau&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
 
     </div>
-  </section>
+
+  </div>
+
+</section>
 
   <!-- FOOTER -->
   <footer>
