@@ -2,63 +2,153 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Gymgartha - Фитнес & Crossfit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gymgartha - Fitness & Crossfit</title>
+
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <!-- Шапка -->
+
+  <!-- HEADER -->
   <header>
-    <img src="assets/img/logo.png">
-    <!-- <h1>Gymgartha</h1> -->
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="Gymgartha Logo">
+    </div>
+
     <nav>
       <ul>
+        <li><a href="#hero">Главная</a></li>
         <li><a href="#gallery">Галерея</a></li>
         <li><a href="#contacts">Контакты</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section id="hero">
-    <h2>Добро пожаловать в Gymgartha</h2>
-    <p>Фитнес и Crossfit зал в центре города</p>
-  </div>
+    <div class="hero-content">
+      <h1>Добро пожаловать в Gymgartha</h1>
+      <p>Фитнес и Crossfit зал в центре города</p>
+
+      <a href="#contacts" class="btn">
+        Записаться
+      </a>
+    </div>
   </section>
 
-  <!-- Галерея -->
-<section id="gallery">
-  <h2>Наш зал</h2>
-  <div class="gallery-grid">
-    <div class="gallery-card">
-      <img src="assets/img/gym1.png" alt="Фото зала">
-      <p>Тренажёрный зал</p>
+  <!-- MISSION -->
+
+  <section id="mission">
+
+    <div class="mission-container">
+
+      <div class="mission-text">
+        <h2>Наша миссия</h2>
+
+        <p>
+          Мы помогаем людям становиться сильнее,
+          выносливее и увереннее в себе через
+          современные фитнес и CrossFit тренировки.
+        </p>
+      </div>
+
+      <div class="mission-image">
+        <img src="assets/img/mission.png" alt="Mission">
+      </div>
+
     </div>
-    <div class="gallery-card">
-      <img src="assets/img/gym2.png" alt="Фото оборудования">
-      <p>Crossfit зона</p>
+
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Наш зал</h2>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-card">
+        <img src="assets/img/gym2.png" alt="Тренажёрный зал">
+        <p>Тренажёрный зал</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="assets/img/gym1.png" alt="Crossfit зона">
+        <p>Crossfit зона</p>
+      </div>
+
     </div>
+  </section>
+
+  <!-- PROGRAMS -->
+<section id="programs">
+
+  <h2>Наши программы</h2>
+
+  <div class="programs-grid">
+
+    <article class="program-card">
+      <h3>CrossFit</h3>
+      <p>Интенсивные тренировки для силы и выносливости.</p>
+    </article>
+
+    <article class="program-card">
+      <h3>Fitness</h3>
+      <p>Современные упражнения для здорового тела.</p>
+    </article>
+
+    <article class="program-card">
+      <h3>Cardio</h3>
+      <p>Улучшение физической формы и энергии.</p>
+    </article>
+
+    <article class="program-card">
+      <h3>Powerlifting</h3>
+      <p>Развитие силы и мышечной массы.</p>
+    </article>
+
+    <article class="program-card">
+      <h3>Personal Trainer</h3>
+      <p>Индивидуальная программа тренировок.</p>
+    </article>
+
+    <article class="program-card">
+      <h3>Functional Training</h3>
+      <p>Функциональные упражнения для повседневной жизни.</p>
+    </article>
+
   </div>
+
 </section>
 
-  <!-- Контакты -->
-<section id="contacts">
-  <h2>Контакты</h2>
-  <div class="contact-card">
-    <h3>Адрес</h3>
-    <p>ул. Спортсменов, 10, Кишинёв</p>
-  </div>
-  <div class="contact-card">
-    <h3>Телефон</h3>
-    <p>+373 600 00000</p>
-  </div>
-  <div class="contact-card">
-    <h3>Email</h3>
-    <p>info@gymgartha.md</p>
-  </div>
-</section>
+  <!-- CONTACTS -->
+  <section id="contacts">
+    <h2>Контакты</h2>
 
+      <div class="contacts-container">
+
+        <div class="contact-card">
+          <h3>Адрес</h3>
+          <p>ул. Спортсменов, 10, Кишинёв</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Телефон</h3>
+          <p>+373 69413050</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p>info@gymgartha.md</p>
+        </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2026 Gymgartha</p>
+    <p>&copy; 2026 ss14-Art . Все права защищены.</p>
   </footer>
+
 </body>
 </html>
